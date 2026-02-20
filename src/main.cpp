@@ -16,12 +16,9 @@
 
 
 void setup() {
-
-    // TODO 3:
-    // Initialize Serial communication (9600 baud rate)
-
-    // TODO 4:
-    // Print system initialization message
+    Serial.begin(9600);
+    pinMode(ldrPin, INPUT);
+    Serial.println("LDR Test");
 }
 
 void loop() {
